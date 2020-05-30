@@ -22,8 +22,8 @@ io.on('connect', (socket) => {
 
     socket.join(user.room);
 
-    socket.emit('message', { user: 'admin', text: `${user.name}, Bienvenido a la clase ${user.room}.`});
-    socket.broadcast.to(user.room).emit('message', { user: 'admin', text: `${user.name} se ha unido!` });
+    socket.emit('message', { user: 'Moderador', text: `${user.name}, Bienvenido a la clase ${user.room}.`});
+    socket.broadcast.to(user.room).emit('message', { user: 'Moderador', text: `${user.name} se ha unido!` });
 
     io.to(user.room).emit('roomData', { room: user.room, users: getUsersInRoom(user.room) });
 
@@ -42,7 +42,7 @@ io.on('connect', (socket) => {
     const user = removeUser(socket.id);
 
     if(user) {
-      io.to(user.room).emit('message', { user: 'Admin', text: `${user.name} ha salido.` });
+      io.to(user.room).emit('message', { user: 'Moderador', text: `${user.name} ha salido.` });
       io.to(user.room).emit('roomData', { room: user.room, users: getUsersInRoom(user.room)});
     }
   })
