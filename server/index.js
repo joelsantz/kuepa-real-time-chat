@@ -22,7 +22,7 @@ io.on('connect', (socket) => {
 
     socket.join(user.room);
 
-    socket.emit('message', { user: 'Moderador', text: `${user.name}, Bienvenido a la clase ${user.room}.`});
+    socket.emit('message', { user: 'Moderador', text: `${user.name}, te uniste a la clase ${user.room}!`});
     socket.broadcast.to(user.room).emit('message', { user: 'Moderador', text: `${user.name} se ha unido!` });
 
     io.to(user.room).emit('roomData', { room: user.room, users: getUsersInRoom(user.room) });
