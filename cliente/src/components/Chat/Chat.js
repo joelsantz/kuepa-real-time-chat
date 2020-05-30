@@ -5,6 +5,7 @@ import io from "socket.io-client";
 import Messages from '../Messages/Messages';
 import InfoBar from '../InfoBar/InfoBar';
 import Input from '../Input/Input';
+import Video from '../Video/Video';
 
 import './Chat.css';
 
@@ -54,11 +55,12 @@ const Chat = ({ location }) => {
 
     return (
         <div className="outerContainer">
-        <div className="container">
+          <Video/>
+          <div className="container">
             <InfoBar room={room} />
             <Messages messages={messages} name={name} />
             <Input message={message} setMessage={setMessage} sendMessage={sendMessage} />
-        </div>
+          </div>
       </div>
     );
 }
