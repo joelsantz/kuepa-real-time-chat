@@ -8,7 +8,7 @@ const TextContainer = ({ users }) => (
   <div className="textContainer">
     <div>
       <h1>Kuepa Realtime Chat <span role="img" aria-label="emoji">💬</span></h1>
-      <h2>Creado por Joel Santana<span role="img" aria-label="emoji">😁</span></h2>
+      {/* <h2>Creado por Joel Santana<span role="img" aria-label="emoji">💻</span></h2> */}
     </div>
     {
       users

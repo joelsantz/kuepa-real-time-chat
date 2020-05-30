@@ -10,7 +10,7 @@ export default function SignIn() {
   return (
     <div className="joinOuterContainer">
       <div className="joinInnerContainer">
-        <h1 className="heading">Kuepa - Chat</h1>
+        <h1 className="heading">Kuepa - Realtime Chat</h1>
         <div>
           <input placeholder="Nombre de usuario" className="joinInput" type="text" onChange={(event) => setName(event.target.value)} />
         </div>
