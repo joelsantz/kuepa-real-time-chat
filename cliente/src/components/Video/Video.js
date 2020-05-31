@@ -12,7 +12,7 @@ const Video = () => (
             <div className= "optionsContainer nav">
                 <ul>
                     <li className = "notes"><a href="#">Notas del profesor <img src={notes} alt="notes icon" /></a></li>
-                    <li className = "documents"><a class="active" href="#">Documentos <img src={download} alt="donwload icon" /></a></li>
+                    <li className = "documents"><a class="active" href="#">Documentos <img src={download} alt="donwload-icon" /></a></li>
                     <li className = "exam"><a href="#">Examen <img src={star} alt="star icon" /></a></li>
                 </ul>
         </div>
