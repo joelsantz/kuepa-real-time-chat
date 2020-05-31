@@ -22,12 +22,13 @@ html, body {
   }
   
   .joinInnerContainer {
-    width: 40%;
+    width: 50%;
     border-radius: 10px;
     box-shadow: 10px 10px 32px -2px rgba(204,204,204,1);
     padding: 50px;
     background-color: #fff;
     margin-right: 100px;
+    margin-left: 100px;
 
     
   }
@@ -72,6 +73,12 @@ html, body {
     margin-top: 20px;
   }
   
+  .background {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   @media (min-width: 320px) and (max-width: 480px) {
     .joinOuterContainer {
       height: 100%;
