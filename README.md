@@ -9,6 +9,7 @@
 * Socket.io: se utilizo esta libreria para la comunicacion en tiempo real, en este caso el funcionamiento del chat.
 * Heroku: el deploy del backend se realizo en heroku, ya que cuenta con una serie de herramientas utiles para esto.
 * Netlify: el deploy del frontend se realizo en este aplicativo, ya que podemos garantizar el CD / CI conectando nuestro app con el respositorio en este caso github.
+* Manejo de git para el versionamiento utilizando gitflow.
 
 ## ¿Como se desarrollo? 🤔
 Debido al tiempo que resulta un limitante en este tipo de pruebas, quise enfocar el desarrollo en la correcta funcionalidad del chat, es por ello que deje afuera la autenticacion y persistencia de datos (aunque realizar esto puede ser algo no tan complejo, requiere de tiempo y los contratiempos pueden jugar una mala pasada) por esto decidi enfocarme en el chat, utilizando el stack de tecnologias mencionadas anteriormente se logro el resultado esperado al alcance y acotacion que me propuse para la prueba.
