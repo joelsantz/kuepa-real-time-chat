@@ -23,7 +23,7 @@ Debido al tiempo que resulta un limitante en este tipo de pruebas, quise enfocar
 * Se utilizo una libreria de react: react-emoji que nos permite utilizar emojis en el chat cuando escribimos el emoji con caracteres (ejemplo: :) , :( )
 
 ## ¿Que se puede mejorar?
-* Por supuesto con un poco más de tiempo se puede integrar mas funcionalidades al chat y la persistencia de datos para lo mensajes, estos deben estar sugetos a un tiempo de sesion, emisor y canal
+* Por supuesto con un poco más de tiempo se puede integrar mas funcionalidades al chat y la persistencia de datos (que en un inicio pensé en hacerla con mongoDB, utilizando GraphQL con apollo)  para lo mensajes, estos deben estar sugetos a un tiempo de sesion, emisor y canal
 * Con el manejo de media querys podemos mejorar la experiencia de usuario en diferentes dispositivos moviles, utilizando los tamaños estandar al momento de desarrollar un aplicativo responsive  (1600px, 1200px, 1024px, 900px, 768px... etc)
 
 ## Momento de ver nuestro chat 💻 
